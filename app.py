@@ -14,3 +14,5 @@ db = SQLAlchemy(app)
 
 from api.user_controller import users_bp
 app.register_blueprint(users_bp, url_prefix='/api/v1/')
+from api.post_controller import posts_bp
+app.register_blueprint(posts_bp, url_prefix="/api/v1/")
